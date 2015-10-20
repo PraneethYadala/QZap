@@ -1,5 +1,5 @@
-# angular-quiz-app — Sample Quiz App
-Sample App demonstrating [AngularJS](http://angularjs.org/) concepts & features
+This is a Quiz Application based on Angular and Firebase, later point will be developed in compatible with Polymer #1.0
+
 
 ##Run server
 ```bash
