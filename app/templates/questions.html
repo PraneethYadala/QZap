@@ -4,7 +4,7 @@
     <div class="item" ng-repeat="question in questions" ng-class="{active : $index==(questionNo-1)}">
       <div class="row-fluid">
         <div class="span12 question">
-          <h3>{{($index + 1)}}.) {{question.question}}</h3>
+          <h3>{{($index + 1)}}.) {{question.question}}</h3><br/>
           <label class="radio" ng-repeat="choice in question.choice">
             <input type="radio" name="{{'choice_' + $index}}" value="{{choice}}" ng-change="selectAnswer(question, choice)" ng-model="question.selected">
             {{choice}}
@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="text-center" ng-show="$last">
-        <a ng-click="viewResults()" class="btn btn-primary">View Results</a>
+        <a ng-click="viewResults()" class="btn " style="background-color: #00bad2;color:white;">View Results</a>
       </div>
     </div>
   </div>
@@ -20,3 +20,16 @@
   <a class="carousel-control left" href="#questions" data-slide="prev">&lsaquo;</a>
   <a class="carousel-control right" href="#questions" data-slide="next">&rsaquo;</a>
 </div>
+<style>
+@media only screen and (min-width:768px)
+{
+   .container-fluid{
+	  width: 1000px;
+      margin-left: 300px;
+     }
+    .carousel-inner {
+     margin-left: 50px;
+     }
+     
+ }
+</style>
